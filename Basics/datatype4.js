@@ -24,7 +24,7 @@ const outsideTemp =null;
  //6. symbol
  const id = Symbol('123')
  const anotherId= Symbol('123')
- console.log(id===anotherId);  // False
+//  console.log(id===anotherId);  // False
 
 //  const bigNumber = 12345678n
 //  console.log(bigNumber);
@@ -43,9 +43,29 @@ const obj ={
 
 // FUNCTION
 const myFunction = function(){
-    console.log("Hello World");
+    // console.log("Hello World");
 }
 
 
+// *******************************************************88
+//  STACK Memory => All Primitive types mai use 
+// HEAP  Memory  => All Non primitive types
 
+let myYoutube ="hitesh@google.com";
 
+let anothername = myYoutube;
+anothername ="chaiwithcode";
+
+console.log(anothername);
+console.log(anothername);
+
+let userOne ={
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email ="hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
